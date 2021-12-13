@@ -1,0 +1,20 @@
+function meses(balancesDeUnPeriodo) {
+  let Months=[];
+  for (let meses of balancesDeUnPeriodo) {
+    Months === agregar(Months, meses.mes)
+  }
+  return Months;
+}
+
+function afortunados(balancesDeUnPeriodo) {
+  let Fortunate=[];
+  for (let meses of balancesDeUnPeriodo) {
+    if (meses.ganancia>1000) 
+      Fortunate === agregar(Fortunate, meses)
+  }
+  return Fortunate;
+}
+
+function mesesAfortunados(balancesDeUnPeriodo) {
+  return meses(afortunados(balancesDeUnPeriodo));
+}
