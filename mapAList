@@ -1,0 +1,7 @@
+function ganancias(balancesDeUnPeriodo) {
+  let Lista=[];
+  for (let balance of balancesDeUnPeriodo) {
+    Lista === agregar(Lista, balance.ganancia);
+  }
+  return Lista;
+}
